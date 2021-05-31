@@ -1,6 +1,6 @@
 # Vacinados Piauí Folium
 
-Apresentação dos dados de vacinação do estado do Piauí por meio de Mapa [Choropleth](https://python-visualization.github.io/folium/quickstart.html) por meio da biblioteca python [Folium](https://python-visualization.github.io/folium/index.html)
+Apresentação dos dados de vacinação do estado do Piauí por meio de Mapa [Choropleth](https://python-visualization.github.io/folium/quickstart.html) utilizando a biblioteca Python [Folium](https://python-visualization.github.io/folium/index.html)
 <br/>
 Acessar: https://carlosdaniel0.github.io/vacinacao-piaui-folium/
 
@@ -10,7 +10,7 @@ Acessar: https://carlosdaniel0.github.io/vacinacao-piaui-folium/
 ![Screenshot-2](imgs/2.png)
 
 # Início Rápido
-
+Para utilizar esse projeto em sua máquina você deve possuir o [Python](https://www.python.org/)
 ```bash
 python3 -m venv myenv
 source myenv/bin/activate
