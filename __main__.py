@@ -3,7 +3,6 @@ import geopandas as gpd
 import branca.colormap as cm
 import pandas as pd
 
-
 # url = (
 #     "https://docs.google.com/spreadsheets/d/1tttGLST1VR5duGWbvcQ2EyrllpAINXGe5W3fYEaZj0E/gviz/tq?tqx=out:csv&sheet=tratamento_dados"
 # )
