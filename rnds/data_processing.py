@@ -6,7 +6,6 @@ cod_municipios = open('id-municipios-pi.json')
 cod_municipios = json.loads(cod_municipios.read())
 dados_municipios = pd.read_csv('vacinacao_rnds.csv', delimiter=';')
 #dados_municipios = pd.read_excel('vacinacao_rnds.xlsx', dtype='str')
-nomes_municipios = pd.read_csv('nomes_municipios.csv', delimiter=',')
 
 
 def get_nome_por_cod(cod, df):
@@ -21,11 +20,11 @@ file = open('vacinacao_pi_map.csv', 'w', newline='', encoding='utf-8')
 csv_file = csv.writer(file)
 csv_file.writerow(['codarea', 'municipio', 'total_doses', 'doses_aplicadas', 'porcentagem'])
 
-for i in range(len(cod_municipios)-1):
+for i in range(len(cod_municipios)):
     print(cod_municipios[i]['municipio']['id'])
     print(cod_municipios[i]['municipio']['nome'])
-    nome = get_nome_por_cod(cod_municipios[i]['municipio']['id'], nomes_municipios)
-    municipio = get_dados_por_nome(nome['municipio'].values[0].title(), dados_municipios)
+    municipio = get_dados_por_nome(cod_municipios[i]['municipio']['nome'].title(), dados_municipios)
+    print(municipio['Município'])
 
     total_doses = municipio['Doses Distribuídas às Secretarias Municipais de Saúde'].values[0]
     doses_aplicadas = municipio['Doses Aplicadas'].values[0]

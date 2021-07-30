@@ -47,7 +47,7 @@ folium.Choropleth(
     fill_color="GnBu",
     fill_opacity=0.7,
     line_opacity=0.2,
-    legend_name="Taxa de Vacinação (%)",
+    legend_name="Relação Doses recebidas X aplicadas (%)",
 ).add_to(m)
 
 NIL = folium.features.GeoJson(
